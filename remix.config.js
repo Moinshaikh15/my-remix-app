@@ -13,22 +13,5 @@ module.exports = {
     v2_normalizeFormMethod: true,
     v2_routeConvention: true,
   },
-  getLoaders() {
-    return [
-      {
-        test: /\.css$/,
-        use: [
-          {
-            loader: require.resolve("style-loader"),
-          },
-          {
-            loader: require.resolve("css-loader"),
-            options: {
-              importLoaders: 1,
-            },
-          },
-        ],
-      },
-    ];
-  },
+  tailwind: true,
 };

@@ -22,7 +22,18 @@ const Index: React.FC = () => {
 
 
   return (
-    <div className="main">
+    <div className="main" style={{
+      fontFamily: "system-ui, sans-serif",
+      lineHeight: "1.8",
+      width: "100vw",
+      height: "100vh",
+      maxWidth: "100vw",
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "center",
+      alignItems: "center",
+      gap: "50px",
+    }}>
 
       <div className="message-container">
         <h1>404</h1>
