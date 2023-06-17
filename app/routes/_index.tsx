@@ -1,7 +1,7 @@
 import type { V2_MetaFunction } from "@remix-run/node";
-import "../styles/index.css"
-import { useState } from "react";
 
+import { useState } from "react";
+import '../styles/index.css'
 
 export const meta: V2_MetaFunction = () => {
   return [
@@ -22,21 +22,10 @@ const Index: React.FC = () => {
 
 
   return (
-    <div className="main" style={{
-      fontFamily: "system-ui, sans-serif",
-      lineHeight: "1.8",
-      width: "100vw",
-      height: "100vh",
-      maxWidth: "100vw",
-      display: "flex",
-      flexDirection: "column",
-      justifyContent: "center",
-      alignItems: "center",
-      gap: "50px",
-    }}>
+    <div className="main" >
 
       <div className="message-container">
-        <h1>404</h1>
+        <h1 className="text-3xl font-bold underline">404</h1>
         <p>It look like we couldn't find this page <br /> To make it up to you, please choose a co-founder to pie in the face</p>
       </div>
 
